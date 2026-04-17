@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harki Phone Database</title>
+    <style>
+        :root { --main: #00ffcc; --bg: #0a0a0a; --card-bg: #151515; }
+        body { background-color: var(--bg); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        .header { position: sticky; top: 0; background: rgba(0,0,0,0.9); padding: 20px; text-align: center; border-bottom: 2px solid var(--main); z-index: 1000; }
+        .header h1 { margin: 0; font-size: 28px; color: var(--main); text-shadow: 0 0 10px var(--main); }
+        .search-box { width: 90%; max-width: 600px; padding: 15px; margin-top: 15px; border-radius: 50px; border: 1px solid #333; background: #111; color: white; text-align: center; font-size: 18px; outline: none; }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; padding: 20px; }
+        .card { background: var(--card-bg); border-radius: 15px; padding: 15px; border: 1px solid #222; }
+        .card h2 { color: var(--main); font-size: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 0; }
+        .list { list-style: none; padding: 0; margin: 0; }
+        .list li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #222; font-size: 15px; }
+        .price { color: #00ff00; font-weight: bold; font-family: 'Courier New', Courier, monospace; }
+        .tag { font-size: 11px; background: #333; padding: 2px 6px; border-radius: 4px; color: #bbb; margin-left: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>HARKI PHONE</h1>
+    <input type="text" id="searchInput" class="search-box" placeholder="بۆ هەر مۆدێلێک دەگەڕێیت لێرە بنووسە...">
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2>📱 Samsung Original (SP)</h2>
+        <ul class="list">
+            <li><span>A01 (A015)</span> <span class="price">19,000</span></li>
+            <li><span>A02 (A022) / M02</span> <span class="price">19,000</span></li>
+            <li><span>A03 (A035) / A03 Core</span> <span class="price">19,000</span></li>
+            <li><span>A03s (A037)</span> <span class="price">22,000</span></li>
+            <li><span>A04 (A045) / A04e</span> <span class="price">19,000</span></li>
+            <li><span>A04s (A047)</span> <span class="price">22,000</span></li>
+            <li><span>A05 / A05s</span> <span class="price">22,000</span></li>
+            <li><span>A10 (A105) / M10</span> <span class="price">19,000</span></li>
+            <li><span>A10s (A107)</span> <span class="price">19,000</span></li>
+            <li><span>A11 (A115) / M11</span> <span class="price">19,000</span></li>
+            <li><span>A12 (A125/A127) / M12</span> <span class="price">22,000</span></li>
+            <li><span>A13 4G (A135) / A23 4G</span> <span class="price">22,000</span></li>
+            <li><span>A14 4G/5G / A15</span> <span class="price">22,000</span></li>
+            <li><span>A20 / A30 / A50 / A30s</span> <span class="price">39,000</span></li>
+            <li><span>A21s (A217)</span> <span class="price">22,000</span></li>
+            <li><span>A22 4G / M22</span> <span class="price">48,000</span></li>
+            <li><span>A24 4G (A245)</span> <span class="price">42,000</span></li>
+            <li><span>A31 / A32 4G</span> <span class="price">48,000</span></li>
+            <li><span>A33 5G / A53 5G / A54 5G</span> <span class="price">75,000</span></li>
+            <li><span>A34 5G (A346)</span> <span class="price">75,000</span></li>
+            <li><span>A51 4G (A515)</span> <span class="price">55,000</span></li>
+            <li><span>A52 4G / 5G / A52s</span> <span class="price">100,000</span></li>
+            <li><span>A70 / A70s / A71 4G</span> <span class="price">82,000</span></li>
+            <li><span>S21 Ultra / S22 Ultra</span> <span class="price">285,000</span></li>
+            <li><span>S23 Ultra / S24 Ultra</span> <span class="price">310,000</span></li>
+            <li><span>Note 20 Ultra 5G</span> <span class="price">255,000</span></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 style="color: white;">📱 iPhone Screens</h2>
+        <ul class="list">
+            <li><span>iPhone 11 Pro Max <span class="tag">Original</span></span> <span class="price">18,000</span></li>
+            <li><span>iPhone 11 Pro Max <span class="tag">GX OLED</span></span> <span class="price">15,000</span></li>
+            <li><span>iPhone 11 Pro Max <span class="tag">JK Incel</span></span> <span class="price">12,000</span></li>
+            <li><span>iPhone 12 Pro Max <span class="tag">Original</span></span> <span class="price">115,000</span></li>
+            <li><span>iPhone 12 Pro Max <span class="tag">GX OLED</span></span> <span class="price">43,000</span></li>
+            <li><span>iPhone 13 Pro Max <span class="tag">JK Incel</span></span> <span class="price">29,000</span></li>
+            <li><span>iPhone 14 Pro Max <span class="tag">Original</span></span> <span class="price">287,000</span></li>
+            <li><span>iPhone 15 Pro Max <span class="tag">Original</span></span> <span class="price">325,000</span></li>
+            <li><span>iPhone 15 Pro Max <span class="tag">OLED</span></span> <span class="price">137,000</span></li>
+            <li><span>iPhone 16 Pro Max <span class="tag">Original</span></span> <span class="price">410,000</span></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #ff6600;">📱 Redmi & Xiaomi</h2>
+        <ul class="list">
+            <li><span>Redmi Note 13 Pro+ 5G</span> <span class="price">49,000</span></li>
+            <li><span>Redmi Note 13 4G <span class="tag">With Frame</span></span> <span class="price">44,000</span></li>
+            <li><span>Poco X6 Pro 5G</span> <span class="price">46,000</span></li>
+            <li><span>Redmi 12 / 13C / Poco C65</span> <span class="price">21,000</span></li>
+            <li><span>Redmi Note 12 4G / 11 4G</span> <span class="price">14,000</span></li>
+            <li><span>Poco F5 Pro <span class="tag">OLED</span></span> <span class="price">68,000</span></li>
+            <li><span>Mi 11 Ultra <span class="tag">Original Frame</span></span> <span class="price">110,000</span></li>
+            <li><span>Redmi A3 / Poco C61</span> <span class="price">18,000</span></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #ffcc00;">📱 Realme</h2>
+        <ul class="list">
+            <li><span>Realme 11 Pro Plus 5G</span> <span class="price">49,000</span></li>
+            <li><span>Realme C53 / C55</span> <span class="price">14,000</span></li>
+            <li><span>Realme 12 Pro / 12 Pro+</span> <span class="price">45,000</span></li>
+            <li><span>Realme Note 50</span> <span class="price">13,000</span></li>
+            <li><span>Realme GT Neo 5</span> <span class="price">52,000</span></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #00ff00;">📱 Infinix & Tecno</h2>
+        <ul class="list">
+            <li><span>Infinix Smart 8 / Hot 40i</span> <span class="price">13,000</span></li>
+            <li><span>Infinix Note 30 / Note 40</span> <span class="price">20,000</span></li>
+            <li><span>Tecno Spark 20 / 20 Pro</span> <span class="price">15,000</span></li>
+            <li><span>Tecno Camon 20 / 30</span> <span class="price">18,000</span></li>
+            <li><span>Infinix Hot 11 / 12</span> <span class="price">14,000</span></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #ff00ff;">🔋 Batteries</h2>
+        <ul class="list">
+            <li><span>iPhone 13 Pro Max Battery</span> <span class="price">14,000</span></li>
+            <li><span>iPhone 14 Pro Max Battery</span> <span class="price">18,000</span></li>
+            <li><span>iPhone 15 Pro Max Battery</span> <span class="price">20,000</span></li>
+            <li><span>iPad Pro 11 (2021) Battery</span> <span class="price">7,000</span></li>
+            <li><span>Redmi Note 10 Pro Battery</span> <span class="price">9,000</span></li>
+            <li><span>Honor X9C Battery <span class="tag">Small</span></span> <span class="price">13,000</span></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const items = document.querySelectorAll('.list li');
+    const cards = document.querySelectorAll('.card');
+
+    searchInput.addEventListener('input', function() {
+        let q = this.value.toUpperCase();
+        items.forEach(li => {
+            let text = li.innerText.toUpperCase();
+            li.style.display = text.includes(q) ? "flex" : "none";
+        });
+        cards.forEach(card => {
+            let visible = card.querySelectorAll('.list li:not([style*="display: none"])');
+            card.style.display = visible.length > 0 ? "block" : "none";
+        });
+    });
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARKI PHONE - MACBOOK PRO EDITION</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card-bg: rgba(20, 20, 20, 0.8);
+            --gold: #d4af37;
+            --neon-blue: #00d2ff;
+            --neon-green: #39ff14;
+        }
+        
+        body {
+            background: var(--bg);
+            color: #eee;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* بەشی سەرەوە - پان و جێگیر */
+        .header-panel {
+            width: 95%;
+            margin: 0 auto 20px auto;
+            text-align: center;
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+        }
+        
+        .rgb-clock {
+            font-size: 55px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #ff0000, #00ff00, #00ffff, #ff00ff, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 400%;
+            animation: move-led 5s linear infinite;
+        }
+
+        .grand-total-box {
+            font-size: 22px;
+            color: var(--neon-green);
+            margin-top: 10px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+        }
+
+        /* بەشی گەڕان */
+        .search-bar {
+            width: 50%;
+            display: block;
+            margin: 0 auto 30px auto;
+            padding: 15px;
+            border-radius: 50px;
+            border: 1px solid var(--gold);
+            background: rgba(212, 175, 55, 0.05);
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* ⭐️ گرنگترین بەش: ڕیزکردنی بەشەکان بە پانی ⭐️ */
+        .main-grid {
+            display: grid;
+            /* لەسەر لاپتۆپ دەبێتە ٣ ڕیز، لەسەر شاشەی گەورەتر ٤ ڕیز */
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.05);
+            position: relative;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--gold); }
+
+        /* لایتی سەر بۆکسەکان */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, #ff0000, #00ff00, #00ffff, #ff00ff);
+            background-size: 400%;
+            animation: move-led 3s linear infinite;
+        }
+
+        .inner-padding { padding: 15px; flex-grow: 1; }
+        
+        .section-header {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            text-align: right;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: #000;
+            color: white;
+            box-sizing: border-box;
+            text-align: right;
+        }
+
+        button.add-btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            background: var(--gold);
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .list-container {
+            margin-top: 10px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(255,255,255,0.03);
+            padding: 6px 10px;
+            border-radius: 5px;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+
+        .total-badge {
+            color: var(--neon-green);
+            font-weight: bold;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 16px;
+        }
+
+        .footer-tools {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        @keyframes move-led { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+    </style>
+</head>
+<body>
+
+    <div class="header-panel">
+        <h1 style="letter-spacing: 5px; margin: 0;">HARKI PHONE</h1>
+        <div id="clock" class="rgb-clock">00:00:00</div>
+        <div class="grand-total-box">کۆی داهاتی گشتی: <span id="grand-total">0</span> IQD</div>
+    </div>
+
+    <input type="text" id="mainSearch" class="search-bar" placeholder="🔍 بگەڕێ لە ناو بەشەکاندا..." onkeyup="filterCards()">
+
+    <div class="main-grid" id="main-grid">
+        </div>
+
+    <div class="footer-tools">
+        <button onclick="generatePDF()" style="background: var(--neon-green); width: 300px; padding: 15px; font-size: 18px; border-radius: 50px;">💾 داگرتنی ڕاپۆرتی ڕۆژانە</button>
+        <br>
+        <button onclick="clearAll()" style="background: none; color: #555; margin-top: 20px; border: none; cursor: pointer;">سفرکردنەوەی هەموو لیستەکان</button>
+    </div>
+
+    <script>
+        const config = [
+            {id: 'p1', t: '📱 فرۆشتنی مۆبایل', opts: ['iPhone 15 Pro Max','iPhone 14 Pro','S24 Ultra','Redmi Note 13','Infinix Note 40']},
+            {id: 'p2', t: '💰 کڕینی مۆبایل', opts: ['کڕین - iPhone','کڕین - Samsung','کڕین - Xiaomi']},
+            {id: 'p3', t: '🔄 گۆڕینەوە', opts: ['تەبدیل ئایفۆن','تەبدیل ئەندرۆید']},
+            {id: 'p4', t: '📺 شاشە (ئەسڵی)', opts: ['شاشە 11 Pro','شاشە 12 Pro','شاشە 13 Pro Max','شاشە S23 Ultra']},
+            {id: 'p5', t: '📺 شاشە (کۆپی)', opts: ['شاشە OLED','شاشە Incell','شاشە TFT']},
+            {id: 'p6', t: '🔋 پاتری iPhone', opts: ['پاتری 11','پاتری 12','پاتری 13','پاتری 14']},
+            {id: 'p7', t: '🔋 پاتری Android', opts: ['پاتری Samsung','پاتری Mi','پاتری Infinix']},
+            {id: 'p8', t: '💎 گلاس و جام', opts: ['گلاس ئایفۆن','گلاس ئەندرۆید','گلاس کاتژمێر']},
+            {id: 'p9', t: '🛠️ چاککردنی بۆرد', opts: ['IC Charge','Wifi IC','Baseband','Audio IC']},
+            {id: 'p10', t: '📷 کامێرا', opts: ['کامێرای پاشەوە','کامێرای پێشەوە','جامەکەی']},
+            {id: 'p11', t: '🔌 شوێن شەحن', opts: ['گۆڕینی فلات','چاککردنی سوکێت']},
+            {id: 'p12', t: '💻 ئایکلۆد و ئەکاونت', opts: ['Bypass Hello','Bypass Passcode','Apple ID']},
+            {id: 'p13', t: '⚙️ سۆفتوێر', opts: ['فۆرمات','Flash System','Update']},
+            {id: 'p14', t: '🔓 FRP', opts: ['Samsung FRP','Xiaomi Google Account']},
+            {id: 'p15', t: '🔌 ئیکسسوارات شەحن', opts: ['شەحن ٢٠ واتی','کێبڵی ئەسڵی','Wireless Charge']},
+            {id: 'p16', t: '🎒 کەڤەر و بەرگ', opts: ['Magsafe Case','Silicone Case']},
+            {id: 'p17', t: '🛡️ درع و جام', opts: ['درع نانۆ','درع زیپ','Privacy']},
+            {id: 'p18', t: '🎧 ئێیرپۆد', opts: ['Airpods Pro 2','Airpods 3','سەماعەی تەل']},
+            {id: 'p19', t: '⌚ کاتژمێر', opts: ['Apple Watch','Ultra Watch']},
+            {id: 'p20', t: '🎮 یاری و یووسی', opts: ['UC PUBG','دەسکی یاری']},
+            {id: 'p21', t: '💳 ئاسیا سێڵ', opts: ['٥٠٠٠','١٠٠٠٠','١٥٠٠٠','٢٥٠٠٠']},
+            {id: 'p22', t: '💳 کۆڕەک تێلیکۆم', opts: ['٥٠٠٠','١٠٠٠٠','١٥٠٠٠','٢٥٠٠٠']},
+            {id: 'p23', t: '📡 فاستلینک', opts: ['کارت ٥٠٠٠','کارت ١٠٠٠٠','ئیشتراک']},
+            {id: 'p24', t: '⚡ کارەبا', opts: ['کارەبای حکومی','مۆلیدە']},
+            {id: 'p25', t: '🚩 قەرزارەکان', opts: ['قەرزی کڕین','قەرزی چاککردنەوە']},
+            {id: 'p26', t: '💸 خەرجی دوکان', opts: ['خواردن و چای','کرێ','نەسریە']},
+            {id: 'p27', t: '🛠️ لاپتۆپ و ئایپاد', opts: ['چاککردنی لاپتۆپ','شاشەی ئایپاد']},
+            {id: 'p28', t: '🛍️ کڕینی کەلوپەل', opts: ['کڕینی پارچە','کڕینی ئیکسسوار']},
+            {id: 'p29', t: '📦 گەیاندن (Delivery)', opts: ['هێنانی پارچە','ناردنی مۆبایل']},
+            {id: 'p30', t: '✨ هیتر', opts: ['ئیشی جیاواز','خزمەتگوزاری']}
+        ];
+
+        const grid = document.getElementById('main-grid');
+        config.forEach(s => {
+            let options = s.opts.map(o => `<option value="${o}">${o}</option>`).join('');
+            grid.innerHTML += `
+                <div class="card section-card">
+                    <div class="inner-padding">
+                        <div class="section-header">${s.t}</div>
+                        <select id="${s.id}-n">${options}<option value="Custom">هیتر</option></select>
+                        <input type="number" id="${s.id}-p" placeholder="نرخ">
+                        <button class="add-btn" onclick="add('${s.id}')">زیادکردن +</button>
+                        <div id="${s.id}-l" class="list-container"></div>
+                        <div id="${s.id}-t" class="total-badge">0 IQD</div>
+                    </div>
+                </div>`;
+        });
+
+        function filterCards() {
+            let q = document.getElementById('mainSearch').value.toLowerCase();
+            document.querySelectorAll('.section-card').forEach(c => {
+                c.style.display = c.innerText.toLowerCase().includes(q) ? "block" : "none";
+            });
+        }
+
+        function updateClock() { document.getElementById('clock').innerText = new Date().toLocaleTimeString('en-GB'); }
+        setInterval(updateClock, 1000); updateClock();
+
+        function add(id) {
+            let n = document.getElementById(id+'-n').value;
+            let p = document.getElementById(id+'-p').value;
+            if(!p) return;
+            let d = JSON.parse(localStorage.getItem('hmac_'+id) || "[]");
+            d.push({ n, p: parseInt(p) });
+            localStorage.setItem('hmac_'+id, JSON.stringify(d));
+            document.getElementById(id+'-p').value = "";
+            render();
+        }
+
+        function render() {
+            let gTotal = 0;
+            config.forEach(s => {
+                let d = JSON.parse(localStorage.getItem('hmac_'+s.id) || "[]");
+                let l = document.getElementById(s.id+'-l');
+                let tD = document.getElementById(s.id+'-t');
+                let t = 0; l.innerHTML = "";
+                d.forEach((item, i) => {
+                    t += item.p;
+                    l.innerHTML += `<div class="row"><span style="color:#ff4444;cursor:pointer;" onclick="del('${s.id}',${i})">✕</span><span>${item.p.toLocaleString()}</span><span>${item.n}</span></div>`;
+                });
+                tD.innerText = t.toLocaleString() + " IQD";
+                gTotal += t;
+            });
+            document.getElementById('grand-total').innerText = gTotal.toLocaleString();
+        }
+
+        function del(id, i) {
+            let d = JSON.parse(localStorage.getItem('hmac_'+id));
+            d.splice(i,1); localStorage.setItem('hmac_'+id, JSON.stringify(d)); render();
+        }
+
+        function generatePDF() {
+            const { jsPDF } = window.jspdf; const doc = new jsPDF();
+            doc.text("HARKI PHONE - DAILY REPORT", 10, 10);
+            let y = 20;
+            config.forEach(s => {
+                let d = JSON.parse(localStorage.getItem('hmac_'+s.id) || "[]");
+                if(d.length > 0) {
+                    doc.text(s.t, 10, y); y += 10;
+                    d.forEach(item => { doc.text(`${item.n}: ${item.p.toLocaleString()} IQD`, 15, y); y += 7; if(y>280){doc.addPage(); y=20;} });
+                }
+            });
+            doc.save("Report.pdf");
+        }
+
+        function clearAll() { if(confirm("هەموو داتاکان سفر بکرێنەوە؟")) { config.forEach(s => localStorage.removeItem('hmac_'+s.id)); render(); } }
+        window.onload = render;
+    </script>
+</body>
+</html>
